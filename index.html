@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FRAMIA || JASA EDIT FOTO & VIDEO</title>
+
+  <!-- Tailwind & DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+  <!-- Font Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Poppins -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="./output.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/Logo Framia PNG.png">
+<style>
+  @keyframes bubble {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-10px) scale(1.05);
+    }
+  }
+  .animate-bubble {
+    animation: bubble 4s ease-in-out infinite;
+  }
+
+  .font-navbar {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+</style>
+
+</head>
+
+<body class="relative">
+  <!--Navbar-->
+  <nav class="sticky top-0 z-50 backdrop-blur-lg bg-white/30 mb-0 pb-0 navbar bg-base-200 transition-all duration-300">
+      <img src="/assets/Logo Framia PNG.png" alt="Logo" class="h-10 w-10 ml-5">  
+      <div class="ps-2">
+        <a class="text-lg font-bold text-blue-400" style="font-family: 'Montserrat', sans-serif;">FRAMIA</a>
+      </div>
+      <div class="flex grow justify-center px-2">
+        <div class="flex items-stretch gap-6">
+          <a class="btn btn-ghost rounded-field" href="#Home">Beranda</a> 
+          <a class="btn btn-ghost rounded-field" href="#Service">Layanan</a> 
+          <a class="btn btn-ghost rounded-field" href="#Portofolio">Portofolio</a> 
+          <a class="btn btn-ghost rounded-field" href="#Harga">Harga</a> 
+          <a class="btn btn-ghost rounded-field">Testimoni</a> 
+          <a class="btn btn-ghost rounded-field">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="hero min-h-screen relative overflow-hidden bg-transparent py-10 " style="font-family: 'Poppins', sans-serif;" id="Home">
+  <!-- Background Blurs -->
+  <div class="absolute inset-0 z-0 blur-2xl opacity-40">
+    <div class="absolute w-72 h-72 bg-pink-300 rounded-full top-0 left-0 animate-pulse-slow"></div>
+    <div class="absolute w-72 h-72 bg-blue-300 rounded-full bottom-0 right-0 animate-pulse-slow delay-200"></div>
+  </div>
+  <!-- Hero Content -->
+  <div class="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 h-full gap-10">
+
+    <!-- Teks Kiri -->
+    <div class="text-center md:text-left max-w-lg">
+      <h1 class="mb-4 text-5xl md:text-6xl font-bold text-blue-400 leading-tight">Jasa Edit Foto & Video</h1>
+      <p class="mb-6 text-black text-lg">Buat tampilan kontenmu lebih menarik, profesional, dan siap tampil di media sosial atau bisnis online.</p>
+      <div class="flex justify-center md:justify-start gap-4">
+        <button class="btn btn-primary btn-outline">Order Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Logo Kanan dengan animasi -->
+    <div class="flex justify-center md:justify-end w-full md:w-auto">
+      <div class="relative w-64 h-64 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center shadow-xl animate-bubble">
+        <img src="/assets/Logo Framia PNG.png" alt="Logo Framia" class="w-40 h-40 object-contain">
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Service -->
+<section id="Service" class="py-16 bg-gray-50 backdrop-blur-md scroll-mt-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center text-black mb-10">Layanan Kami</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Photo Retouching</h2>
+    <p>Merapikan wajah, kulit, dan detail foto agar terlihat lebih halus dan profesional tanpa menghilangkan karakter asli.</p>
+  </div>
+</div>
+      <!-- Card 2 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Foto Produk / Katalog</h2>
+    <p>Edit Profesional untuk fotop produk agar tampak menarik dan siap dipajang dikatalog, marketplace, atau media promosi</p>
+  </div>
+</div>
+      <!-- Card 3 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Color Grading</h2>
+    <p>Menyesuaikan warna dan tone foto agar terlihat konsisten dan lebih artistik dari moody, vintage, sampai cinematic</p>
+  </div>
+</div>
+      <!-- Card 4 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Video Reels / Tiktok Editing</h2>
+    <p>Edit cepat dan dinamis untuk konten Reels, TikTok, atau Shorts agar lebih menarik, engaging, dan mengikuti trend</p>
+    </div>
+  </div>
+      <!-- Card 5 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Video Cinematic</h2>
+    <p>Editan bergaya film dengan transisi halus, efek dramatis, dan musik yang selaras cocok untuk wedding, prewed, dll.</p>
+</div>
+</div>
+      <!-- Card 6 -->
+      <div class="card bg-sky-500/75 w-96 shadow-lg hover:-translate-y-2 hover:shadow-2xl transform transition-all duration-500 ease-out">
+  <div class="card-body">
+    <h2 class="card-title font-bold">Custom Request</h2>
+    <p>Layanan fleksibel untuk kamu yang punya permintaan khusus, bisa campuran beberapa layanan sesuai kebutuhan.</p>
+</div>
+      </div>
+</div>
+</section>
+<!-- Portofolio -->
+<section id="portfolio" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-4">Portofolio</h2>
+    <p class="text-center text-gray-500 mb-10">
+      Lihat hasil-hasil editing terbaik dari tim <span class="font-semibold text-blue-500">FRAMIA</span> yang telah digunakan oleh klien bisnis, content creator, dan individu.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure>
+          <img src="/assets/Porto 1.jpg" alt="Produk UMKM" class="object-cover h-100 w-full" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Produk UMKM</h3>
+          <p class="text-sm text-gray-500">Foto produk dengan sentuhan profesional dan clean look.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure>
+          <img src="/assets/Porto 2.jpg" alt="Video Reels" class="object-cover h-100 w-full" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Video Reels</h3>
+          <p class="text-sm text-gray-500">Video pendek yang engaging untuk sosial media.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure class="relative">
+          <img src="/assets/Porto 3.jpg" alt="Foto Retouch" class="object-cover h-100 w-full" />
+          <span class="absolute bottom-2 right-2 bg-white text-xs px-2 py-1 rounded-full shadow">Before-After</span>
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Foto Retouch</h3>
+          <p class="text-sm text-gray-500">Retouch wajah untuk hasil glowing natural.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure>
+          <img src="/assets/Porto 4.jpg" alt="Produk UMKM" class="object-cover h-100 w-full" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Color Grading Video</h3>
+          <p class="text-sm text-gray-500">Bikin footage biasa jadi luar biasa. Sentuhan warna yang bercerita.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure>
+          <img src="/assets/Porto 5.jpg" alt="Video Reels" class="object-cover h-100 w-full" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Video Cinematic</h3>
+          <p class="text-sm text-gray-500">Tangkap momen, ubah jadi film</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <figure class="relative">
+          <img src="/assets/Porto 3.jpg" alt="Foto Retouch" class="object-cover h-100 w-full" />
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title text-lg font-semibold">Custom Request</h3>
+          <p class="text-sm text-gray-500">Retouch wajah untuk hasil glowing natural.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Harga  -->
+ <section id="Harga" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-4">Pilih Paket Sesuai Kebutuhanmu</h2>
+    <p class="text-gray-500 mb-10 max-w-2xl mx-auto">
+      Dapatkan hasil editing profesional sesuai kebutuhan—baik untuk personal branding, konten bisnis, atau proyek kreatifmu.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Basic Package -->
+      <div class="card bg-white shadow-md hover:shadow-xl transition hover:-translate-y-2 duration-300">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold mb-2">Basic</h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">Rp150.000</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2 text-left">
+            <li>✅ 1 Foto/Video</li>
+            <li>✅ Color correction dasar</li>
+            <li>✅ Resolusi Full HD</li>
+            <li>✅ Revisi 1x</li>
+            <li>⏱️ Estimasi 2 hari</li>
+          </ul>
+          <button class="btn btn-outline btn-primary w-full">Pilih Paket</button>
+        </div>
+      </div>
+
+      <!-- Pro Package (highlighted) -->
+      <div class="card bg-white shadow-lg border-2 border-blue-500 scale-105 z-10 hover:shadow-xl transition hover:-translate-y-2 duration-300">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold mb-2">Pro <span class="badge badge-primary ml-2">Paling Populer</span></h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">Rp350.000</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2 text-left">
+            <li>✅ Hingga 3 Foto/Video</li>
+            <li>✅ Advanced color grading</li>
+            <li>✅ Efek transisi / retouch wajah</li>
+            <li>✅ Resolusi hingga 4K</li>
+            <li>✅ Revisi hingga 2x</li>
+            <li>⏱️ Estimasi 3 hari</li>
+          </ul>
+          <button class="btn btn-primary w-full">Pilih Paket</button>
+        </div>
+      </div>
+
+      <!-- Premium Package -->
+      <div class="card bg-white shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold mb-2">Premium</h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">Rp750.000</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2 text-left">
+            <li>✅ Hingga 10 Foto/Video</li>
+            <li>✅ Cinematic color grading</li>
+            <li>✅ Motion graphics (video)</li>
+            <li>✅ Resolusi Ultra HD</li>
+            <li>✅ Revisi bebas</li>
+            <li>🎯 Konsultasi & brief personal</li>
+            <li>⏱️ Estimasi 5 hari</li>
+          </ul>
+          <button class="btn btn-outline btn-primary w-full">Pilih Paket</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="cara-pesan" class="py-20 bg-white/10 backdrop-blur-md scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+    
+    <!-- Ilustrasi SVG di Kiri -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="/assets/note-taking-10.svg" alt="Ilustrasi Pemesanan" class="w-full h-auto max-w-md">
+    </div>
+
+    <!-- Timeline atau Langkah Pemesanan -->
+    <div class="w-full md:w-1/2 text-blue-400">
+      <h2 class="text-4xl font-bold mb-10 text-center">Cara Pemesanan</h2>
+      <ul class="timeline timeline-vertical text-lg">
+        <!-- Step 1 -->
+        <li>
+          <div class="timeline-start timeline-box py-4 px-6 text-black">Hubungi Kami</div>
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <hr />
+        </li>
+
+        <!-- Step 2 -->
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-end timeline-box py-4 px-6 text-black">Konsultasi Kebutuhan</div>
+          <hr />
+        </li>
+
+        <!-- Step 3 -->
+        <li>
+          <hr />
+          <div class="timeline-start timeline-box py-4 px-6 text-black">Lakukan Pemesanan</div>
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <hr />
+        </li>
+
+        <!-- Step 4 -->
+        <li>
+          <hr />
+          <div class="timeline-end timeline-box py-4 px-6 text-black">Proses & Kirim Hasil</div>
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <aside>
+    <img src="/assets/Logo Framia PNG.png" width="100" height="100">
+    <p>
+      <span style="font-family: 'Montserrat', sans-serif;" class="font-bold text-blue-400">FRAMIA</span>
+      <br />
+      Providing reliable tech since 2025
+    </p>
+  </aside>
+  <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Photo Retouching</a>
+    <a class="link link-hover">Foto Produk / Katalog</a>
+    <a class="link link-hover">Color Grading</a>
+    <a class="link link-hover">Video Reels / TikTok Editing</a>
+    <a class="link link-hover">Video Cinematic</a>
+    <a class="link link-hover">Custom Request</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
+</body>
+</html>
