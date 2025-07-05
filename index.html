@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FRAMIA || JASA EDIT FOTO & VIDEO</title>
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+  
   <!-- Tailwind & DaisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -36,6 +39,19 @@
     font-family: 'Montserrat', sans-serif;
   }
   
+/* Custom animations for testimonials */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .testimonial-card {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+
 </style>
 
 </head>
@@ -275,11 +291,140 @@
           <button class="btn btn-outline btn-primary w-full">Pilih Paket</button>
         </div>
       </div>
-
     </div>
   </div>
 </section>
+<!-- Section Testimonial-->
+ <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Apa Kata Customer Kami?</h2>
+                <p class="text-lg text-base-content/70 max-w-2xl mx-auto">Pengalaman nyata dari klien kami yang puas, menjadi bukti kualitas dan komitmen kami.</p>
+            </div>
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-base-200 rounded-box p-8 shadow-lg hover:shadow-xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cfd91532-7c02-46f5-81dd-5f6b912ed95e.png" alt="Portrait of a smiling middle-aged businesswoman with dark hair in a professional blazer" />
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Sarah Johnson</h4>
+                            <p class="text-base-content/70">CEO, TechSolutions</p>
+                        </div>
+                    </div>
+                    <div class="rating rating-md mb-4">
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                    </div>
+                    <p class="text-base-content/80 italic">
+                        "The team delivered beyond our expectations. Our productivity increased by 40% after implementing their solution. Their attention to detail and customer support is unmatched in the industry."
+                    </p>
+                </div>
 
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-base-200 rounded-box p-8 shadow-lg hover:shadow-xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41acfdf2-26e4-4526-b0b0-190a9347db7a.png" alt="Portrait of a young man with glasses wearing a casual shirt in a modern office setting" />
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Michael Chen</h4>
+                            <p class="text-base-content/70">Product Manager, InnovateX</p>
+                        </div>
+                    </div>
+                    <div class="rating rating-md mb-4">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="text-base-content/80 italic">
+                        "Their platform transformed how we handle customer relationships. The onboarding was seamless, and their team was responsive to all our customization requests. A solid 4.5/5 stars!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-base-200 rounded-box p-8 shadow-lg hover:shadow-xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/22f2485f-8e07-47d0-afab-0bf176cb39f5.png" alt="Portrait of a senior executive with grey hair wearing a suit in a corporate boardroom" />
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">David Wilson</h4>
+                            <p class="text-base-content/70">Director, Global Finance</p>
+                        </div>
+                    </div>
+                    <div class="rating rating-md mb-4">
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                    </div>
+                    <p class="text-base-content/80 italic">
+                        "We've worked with many vendors over the years, but none have demonstrated the level of professionalism and technical expertise as this team. They solved complex integration challenges that others couldn't."
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Indicators/Carousel Controls (hidden on mobile) -->
+            <!-- <div class="flex justify-center mt-12 gap-2 hidden md:flex">
+                <button class="btn btn-circle btn-sm btn-primary">1</button>
+                <button class="btn btn-circle btn-sm btn-ghost">2</button>
+                <button class="btn btn-circle btn-sm btn-ghost">3</button>
+            </div> -->
+
+
+            <!-- CTA -->
+            <div class="text-center mt-16">
+                <button class="btn btn-primary px-8">Read More Testimonials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+        // Simple auto-rotate testimonials (optional)
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        let currentIndex = 0;
+        
+        function rotateTestimonials() {
+            testimonials.forEach(card => {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+            });
+
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            testimonials[currentIndex].style.display = 'block';
+            
+            setTimeout(() => {
+                testimonials[currentIndex].style.opacity = '1';
+            }, 50);
+            
+            // Update carousel indicators
+            document.querySelectorAll('.btn-circle').forEach((btn, index) => {
+                btn.className = index === currentIndex 
+                    ? 'btn btn-circle btn-sm btn-primary' 
+                    : 'btn btn-circle btn-sm btn-ghost';
+            });
+        }
+        
+        // For demo purposes - rotate every 5 seconds
+        setInterval(rotateTestimonials, 5000);
+    </script> -->
 <section id="cara-pesan" class="py-20 bg-white/10 backdrop-blur-md scroll-mt-20">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
     
